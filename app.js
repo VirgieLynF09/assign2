@@ -11,7 +11,8 @@ var bodyParser = require('body-parser');
 var dbConfig = require('./db');
 var mongoose = require('mongoose');
 // Connect to DB
-mongoose.connect(dbConfig.url);
+//mongoose.connect(dbConfig.url);
+mongoose.connect('mongodb://virgief09:virgief09@ds061741.mongolab.com:61741/assign2');
 
 var app = express();
 var port= process.env.PORT ||8000;
