@@ -1,0 +1,40 @@
+@import url("//fonts.googleapis.com/css?family=Lato:300,400,700");
+body {
+	padding: 50px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+h1, h4, h3, span, .wallpaper {
+	text-align: center;
+}
+h6 {
+	text-align: right;
+} 
+a {
+  	color: #00B7FF;
+	padding-right: 10px;
+}
+
+div.row a, .wallpaper a {
+	margin-right: 10px;
+}
+div.col-lg-3 {
+	text-align: center;
+	padding: 20px;
+}
+section.user{
+	text-align: center;
+}
+legend {
+	padding: 10px;
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	margin-top: 300px;
+}
+footer p {
+	color: #0ce3ac;
+	display: inline;
+	padding-right: 5px;
+}

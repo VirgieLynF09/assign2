@@ -1,0 +1,37 @@
+extends layout
+
+block content
+	h1 Edit Dealership
+	article(class='container')
+		form(method='post', class='form-horizontal', action='/dealership/edit/#{dealer._id}')
+			fieldset
+				legend Dealership Info
+				div(class='form-group')
+					label(class='col-lg-2 control-label') Dealership Name
+					div(class='col-lg-10')
+						input(name='company', class='form-control', placeholder='Dealership Name', value='#{dealer.dealershipName}')
+				div(class='form-group')
+					label(for='address', class='col-lg-2 control-label') Address
+					div(class='col-lg-10')
+						input(name='address', class='form-control', placeholder='Address', value='#{dealer.address}')
+				div(class='form-group')
+					label(for='city', class='col-lg-2 control-label') City
+					div(class='col-lg-10')
+						input(name='city', class='form-control', placeholder='City', value='#{dealer.city}')
+				div(class='form-group')
+					label(class='col-lg-2 control-label') Province
+					div(class='col-lg-10')
+						input(name='province', class='form-control', placeholder='Province', value='#{dealer.province}')
+				div(class='form-group')
+					label(class='col-lg-2 control-label') Postal Code
+					div(class='col-lg-10')
+						input(name='postal', class='form-control', placeholder='e.g. L9F9V9', value='#{dealer.postalCode}')
+				div(class='form-group')
+					label(class='col-lg-2 control-label') Phone Number
+					div(class='col-lg-10')
+						input(name='phone', class='form-control', placeholder='xxx-xxx-xxxx', value='#{dealer.phone}')
+				div(class='form-group')
+					input(type='hidden', class='btn btn-default', name='id', value='#{dealer._id}')
+					input(type='submit', class='btn btn-primary', value='Save')
+
+		block footer

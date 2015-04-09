@@ -1,0 +1,37 @@
+extends layout
+
+block content
+	h1 Add Dealership
+	article(class='container')
+		form(method='post', action='/dealership/add', class='form-horizontal')
+			fieldset
+				legend Dealership Info
+				div(class='form-group')
+					label( class='col-lg-2 control-label') Dealership Name
+					div(class='col-lg-10')
+						input(name='company', required, class='form-control', placeholder='Dealership Name')
+				div(class='form-group')
+					label(class='col-lg-2 control-label') Address
+					div(class='col-lg-10')
+						input(name='address', required, class='form-control', placeholder='Address')
+				div(class='form-group')
+					label(class='col-lg-2 control-label') City
+					div(class='col-lg-10')
+						input(name='city', required, class='form-control', placeholder='City')
+				div(class='form-group')
+					label(class='col-lg-2 control-label') Province
+					div(class='col-lg-10')
+						input(name='province', required, class='form-control', placeholder='Province')
+				div(class='form-group')
+					label(class='col-lg-2 control-label') Postal Code
+					div(class='col-lg-10')
+						input(name='postal', required, class='form-control', placeholder='e.g. L9F9V9')
+				div(class='form-group')
+					label(class='col-lg-2 control-label') Phone Number
+					div(class='col-lg-10')
+						input(name='phone', required, class='form-control', placeholder='xxx-xxx-xxxx')
+				div(class='form-group')
+					div(class='col-lg-10')
+						input(type='submit', class='btn btn-primary', value='Add Dealer')			
+		block footer
+		

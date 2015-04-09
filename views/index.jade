@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	main(class='jumbotron')
+		section(class='wallpaper container-fluid')
+			h1 Welcome
+			img(src='/images/nature-book-3d-fantasy.jpg', alt='Nature Book 3D Fantasy', class='img-rounded img-responsive img-center')
+		br
+		div(class='wallpaper')
+			a(href='/login', title='Dealership Lists', class='btn btn-primary btn-lg btn-block') Login
+			br
+			p Don't Have an Account? 
+				a(href='/signup') Create an account
+block footer

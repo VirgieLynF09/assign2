@@ -1,0 +1,68 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel="stylesheet")
+	body
+		nav(class='navbar navbar-default')
+			div(class='container-fluid')
+				div(class='navbar-header')
+					button(type='button', class='navbar-toggle collapsed', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+						span(class='sr-only') Toggle Navigation
+						span(class='icon-bar') 
+						span(class='icon-bar')
+						span(class='icon-bar')
+					a(class='navbar-brand', href='/', title='Logo') 
+						i(class='fa fa-car fa-lg')
+				div(class='collapse navbar-collapse', id='bs-example-navbar-collapse-1')
+					ul(class='nav navbar-nav')
+						li
+							a(href='/', title='Home') 
+								i(class='fa fa-home fa-lg') Home
+						li
+							a(href='/dealership', title='Dealership Lists') 
+								i(class='fa fa-file-text-o fa-lg') Dealership Lists
+						li 
+							a(href='/dealership/add', title='Add Dealership') 
+								i(class='fa fa-plus-square-o fa-lg') New Dealership
+					ul(class='nav navbar-nav navbar-right')
+						li
+							a(href='/signup', title='Register') 
+								i(class='fa fa-pencil-square-o fa-lg') Register
+						li
+							a(href='/login', title='Login') 
+								i(class='fa fa-sign-in fa-lg') Login
+						
+						li
+							a(href='/signout', title='Logout') 
+								i(class='fa fa-sign-out fa-lg') Logout
+
+
+		block content
+		footer
+			p
+				small Assignment 2 | Car Dealership Directory
+			br
+			p 
+				small Submitted by: Virgie Fernandez
+			br
+			p 
+				small Submitted to: Rich Freeman
+			br
+			small
+				a(href='#', title='copyright') Copyright © 2015
+			small
+				a(href='#', title='alrights') All Rights Reserved
+			br
+			a(href='#', title='linkedin')
+				i(class='fa fa-linkedin-square')
+			a(href='#', title='facebook')
+				i(class='fa fa-facebook-square')
+			a(href='#', title='twitter')
+				i(class='fa fa-twitter-square')
+			a(href='#', title='instagram')
+				i(class='fa fa-instagram')
+			
+		block footer

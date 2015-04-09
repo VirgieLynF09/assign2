@@ -1,0 +1,26 @@
+extends layout
+
+block content
+	article(class='container')
+		h1 Login Page
+		h4
+			img(class='img-circle', src='/images/blue-user-icon.png', alt='Blue User Icon Image')
+		
+		section(class='row')
+			form(role='form', action="/login", method="post", class='form-horizontal')
+				fieldset
+				legend Please Enter Your Username and Password To Login.
+				#message
+					if message
+						h4(class='text-center text-danger') #{message}
+				div(class='form-group')
+					div(class='col-lg-12')
+						input(type='text', name='username', class='form-control', placeholder='Enter Username')
+				div(class='form-group')
+					div(class='col-lg-12')
+						input(type='password', name='password', class='form-control', placeholder='Password')
+						div(class='form-group')
+							div(class='col-lg-12')
+								br
+								button(type='submit', class='btn btn-primary btn-lg btn-block') Login
+		block footer

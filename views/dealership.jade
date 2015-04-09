@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	h1 Dealership Lists
+	article(class='container')
+		section(class='row')
+			each dealer, i in dealership
+				div(class='col-lg-3')
+					div(class='row')
+						h3 #{dealer.company}
+					div(class='row')
+						p #{dealer.address}
+					div(class='row')
+						p #{dealer.city}, #{dealer.province}
+					div(class='row')
+						p #{dealer.postal}
+					div(class='row')
+						p #{dealer.phone}
+					div(class='row')
+						a(class='btn btn-primary btn-xs',href='dealership/edit/#{dealer._id}' title='Edit') Edit
+						a(class='btn btn-default btn-xs', href='dealership/delete/#{dealer._id}' title='Delete' onclick='return confirm(\'Are you sure you want to delete this dealer?\');') Delete
+	block footer
+		

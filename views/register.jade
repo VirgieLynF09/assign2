@@ -1,0 +1,34 @@
+extends layout
+
+block content
+	article(class='container')
+		h1 Register Page
+		section
+			form(role='form', action="/signup", method="post", class='form-horizontal')
+				fieldset
+				legend Please Enter Your Username and Password To Register.
+				h4
+						span(class="glyphicon glyphicon-asterisk text-info") Required Field
+				#message
+					if message
+						h3(class='text-center text-danger') #{message}
+				div(class='form-group')
+					label(for='logo', class='col-lg-2 control-label') Username
+					div(class='col-lg-10 input-group')
+						input(type='text', name='username', class='form-control', required, placeholder='Enter Username')
+						span(class="input-group-addon")
+							span(class="glyphicon glyphicon-asterisk text-danger")
+				div(class='form-group')
+					label( class='col-lg-2 control-label') Password
+					div(class='col-lg-10 input-group')
+						input(type='password', name='password', required, class='form-control', placeholder='Password')
+						span(class="input-group-addon")
+							span(class="glyphicon glyphicon-asterisk text-danger")
+				div(class='form-group')
+					div(class='col-lg-offset-2')
+						input(type='submit', class='btn btn-primary btn-lg btn-block', value='Register')
+				div(class='form-group')
+					div(class='col-lg-offset-2')
+						a(class='btn btn-default btn-lg btn-block', href='/' title='Cancel') Cancel
+		block footer				
+		
